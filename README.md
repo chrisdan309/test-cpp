@@ -43,3 +43,16 @@ Dentro del ``gdb`` podemos correr los siguientes comandos
 (gdb) step
 (gdb) continue
 ```
+
+
+Para usar gprof debemos configurar el proyecto de la siguiente manera
+
+```sh
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-pg" -S . -B build
+```
+
+Y luego guardamos el out en perfil.txt
+
+```sh
+gprof ./build/new_test gmon.out > perfil.txt
+```
