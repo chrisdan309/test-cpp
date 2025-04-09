@@ -1,5 +1,11 @@
 # Pruebas unitarias
 
+Se usa GoogleTest para las pruebas unitarias en c++
+
+```
+https://google.github.io/googletest/
+```
+
 Ejecuta el siguiente comando para configurar el proyecto en modo Debug (necesario para debugging con GDB):
 
 ```sh
